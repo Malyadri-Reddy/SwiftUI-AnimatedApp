@@ -6,13 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B3C65BF42D7F139000C51294 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = B3C65BF32D7F139000C51294 /* RiveRuntime */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B3C65BD22D7F121F00C51294 /* SwiftUI-AnimatedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-AnimatedApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B3C65BFF2D7F1C9300C51294 /* Exceptions for "SwiftUI-AnimatedApp" folder in "SwiftUI-AnimatedApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B3C65BD12D7F121F00C51294 /* SwiftUI-AnimatedApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B3C65BD42D7F121F00C51294 /* SwiftUI-AnimatedApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B3C65BFF2D7F1C9300C51294 /* Exceptions for "SwiftUI-AnimatedApp" folder in "SwiftUI-AnimatedApp" target */,
+			);
 			path = "SwiftUI-AnimatedApp";
 			sourceTree = "<group>";
 		};
@@ -23,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3C65BF42D7F139000C51294 /* RiveRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +83,7 @@
 			);
 			name = "SwiftUI-AnimatedApp";
 			packageProductDependencies = (
+				B3C65BF32D7F139000C51294 /* RiveRuntime */,
 			);
 			productName = "SwiftUI-AnimatedApp";
 			productReference = B3C65BD22D7F121F00C51294 /* SwiftUI-AnimatedApp.app */;
@@ -94,6 +113,9 @@
 			);
 			mainGroup = B3C65BC92D7F121F00C51294;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B3C65BF22D7F139000C51294 /* XCRemoteSwiftPackageReference "rive-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B3C65BD32D7F121F00C51294 /* Products */;
 			projectDirPath = "";
@@ -254,6 +276,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-AnimatedApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-AnimatedApp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -282,6 +305,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-AnimatedApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-AnimatedApp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -322,6 +346,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B3C65BF22D7F139000C51294 /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B3C65BF32D7F139000C51294 /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3C65BF22D7F139000C51294 /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B3C65BCA2D7F121F00C51294 /* Project object */;
 }
